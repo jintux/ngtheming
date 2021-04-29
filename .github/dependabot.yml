@@ -1,0 +1,17 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: "@types/jasmine"
+    versions:
+    - 3.6.9
+  - dependency-name: "@types/node"
+    versions:
+    - 14.14.41
+  - dependency-name: "@angular/cli"
+    versions:
+    - 11.2.9
